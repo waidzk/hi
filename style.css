@@ -1,0 +1,335 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: #ffa4a9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-container {
+  position: relative;
+}
+/* 
+.box {
+  width: 500px;
+  height: 500px;
+  border: 2px dotted white;
+  position: absolute;
+  top: -75px;
+  left: -75px;
+} */
+
+.heart {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  left: 0px;
+  animation: heart-one 0.5s infinite;
+  transform: rotate(-45deg);
+  transform-origin: left;
+  position: absolute;
+  z-index: 3;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  background-color: red;
+  animation: heart-one 0.5s infinite;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  left: 50px;
+}
+
+@keyframes heart-one {
+  0% {
+    background-color: red;
+  }
+  33.3% {
+    background-color: #f8787f;
+  }
+  66.6% {
+    background-color: #ff888f;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.heart-2x {
+  background-color: #f8787f;
+  height: 150px;
+  width: 150px;
+  left: -20px;
+  animation: heart-two 0.5s infinite;
+  transform-origin: left;
+  transform: rotate(-45deg);
+  position: absolute;
+  z-index: 2;
+}
+.heart-2x::before,
+.heart-2x::after {
+  content: "";
+  background-color: #f8787f;
+  height: 150px;
+  width: 150px;
+  animation: heart-two 0.5s infinite;
+  position: absolute;
+  border-radius: 50%;
+}
+.heart-2x::before {
+  top: -70px;
+  left: 0;
+}
+.heart-2x::after {
+  left: 70px;
+}
+
+@keyframes heart-two {
+  0% {
+    background-color: #ff888f;
+  }
+  33.3% {
+    background-color: red;
+  }
+  66.6% {
+    background-color: #f8787f;
+  }
+  100% {
+    background-color: #ff888f;
+  }
+}
+
+.heart-3x {
+  background-color: #ff888f;
+  height: 180px;
+  width: 180px;
+  left: -30px;
+  animation: heart-three 0.5s infinite;
+  transform-origin: left;
+  transform: rotate(-45deg);
+  position: absolute;
+  z-index: 1;
+}
+.heart-3x::before,
+.heart-3x::after {
+  content: "";
+  background-color: #ff888f;
+  height: 180px;
+  width: 180px;
+  animation: heart-three 0.5s infinite;
+  position: absolute;
+  border-radius: 50%;
+}
+.heart-3x::before {
+  top: -80px;
+  left: 0;
+}
+.heart-3x::after {
+  left: 80px;
+}
+@keyframes heart-three {
+  0% {
+    background-color: #f8787f;
+  }
+  33.3% {
+    background-color: #ff888f;
+  }
+  66.6% {
+    background-color: red;
+  }
+  100% {
+    background-color: #f8787f;
+  }
+}
+
+.heart-4x {
+  background-color: #ff888f;
+  height: 240px;
+  width: 240px;
+  left: -50px;
+  animation: heart-four 0.5s infinite;
+  transform-origin: left;
+  transform: rotate(-45deg);
+  position: absolute;
+  z-index: 1;
+}
+.heart-4x::before,
+.heart-4x::after {
+  content: "";
+  background-color: #ff888f;
+  height: 240px;
+  width: 240px;
+  animation: heart-four 0.5s infinite;
+  position: absolute;
+  border-radius: 50%;
+}
+.heart-4x::before {
+  top: -110px;
+  left: 0;
+}
+.heart-4x::after {
+  left: 110px;
+}
+@keyframes heart-four {
+  0% {
+    background-color: #f8787f;
+  }
+  33.3% {
+    background-color: #ff888f;
+  }
+  66.6% {
+    background-color: #f8787f;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.heart-5x {
+  background-color: #ff888f;
+  height: 300px;
+  width: 300px;
+  left: -70px;
+  animation: heart-five 0.5s infinite;
+  transform-origin: left;
+  transform: rotate(-45deg);
+  position: absolute;
+  z-index: 1;
+}
+.heart-5x::before,
+.heart-5x::after {
+  content: "";
+  background-color: #ff888f;
+  height: 300px;
+  width: 300px;
+  animation: heart-five 0.5s infinite;
+  position: absolute;
+  border-radius: 50%;
+}
+.heart-5x::before {
+  top: -140px;
+  left: 0;
+}
+.heart-5x::after {
+  left: 140px;
+}
+@keyframes heart-five {
+  0% {
+    background-color: red;
+  }
+  33.3% {
+    background-color: #ff888f;
+  }
+  66.6% {
+    background-color: #f8787f;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.heart-6x {
+  background-color: #ff888f;
+  height: 400px;
+  width: 400px;
+  left: -110px;
+  animation: heart-six 0.5s infinite;
+  transform-origin: left;
+  transform: rotate(-45deg);
+  position: absolute;
+  z-index: 1;
+}
+.heart-6x::before,
+.heart-6x::after {
+  content: "";
+  background-color: #ff888f;
+  height: 400px;
+  width: 400px;
+  animation: heart-six 0.5s infinite;
+  position: absolute;
+  border-radius: 50%;
+}
+.heart-6x::before {
+  top: -180px;
+  left: 0;
+}
+.heart-6x::after {
+  left: 180px;
+}
+@keyframes heart-six {
+  0% {
+    background-color: #ff888f;
+  }
+  33.3% {
+    background-color: red;
+  }
+  66.6% {
+    background-color: #f8787f;
+  }
+  100% {
+    background-color: #ff888f;
+  }
+}
+
+.heart-7x {
+  background-color: #ff888f;
+  height: 500px;
+  width: 500px;
+  left: -140px;
+  animation: heart-seven 0.5s infinite;
+  transform-origin: left;
+  transform: rotate(-45deg);
+  position: absolute;
+  z-index: 1;
+}
+
+.heart-7x::before,
+.heart-7x::after {
+  content: "";
+  background-color: #ff888f;
+  height: 500px;
+  width: 500px;
+  animation: heart-seven 0.5s infinite;
+  position: absolute;
+  border-radius: 50%;
+}
+.heart-7x::before {
+  top: -230px;
+  left: 0;
+}
+.heart-7x::after {
+  left: 230px;
+}
+
+@keyframes heart-seven {
+  0% {
+    background-color: #f8787f;
+  }
+  33.3% {
+    background-color: #ff888f;
+  }
+  66.6% {
+    background-color: red;
+  }
+  100% {
+    background-color: #f8787f;
+  }
+}
